@@ -1,0 +1,14 @@
+point=8192
+dw=10
+sf1=100.646388
+#
+400.2244 MHz --- adamantance --- 1.8 ppm from TMS
+
+27 Sep 2019 
+400 5mm CPMAS probe
+
+aXScale = 2
+aHScale = 0.825
+
+100 ppm --- 100.646388 MHz 
+

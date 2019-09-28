@@ -1,0 +1,27 @@
+point=4096
+dw=10
+sf1=100.646388
+#
+400.2246 MHz --- adamantance --- 1.8 ppm from TMS
+
+
+aXScale = 2
+aHScale = 0.93
+
+adamantane 37.85 ppm --- 100.6401656 MHz
+
+62.15*100.6401656 = 6254.8 (Hz)
+
+100 ppm --- 100.64621 MHz 
+
+[Log]
+actualNA=20
+
+[XAxis]
+isCustom=false
+metricPrefix=micro
+plotMetricPrefix=milli
+xAxisLabel=
+xAxisUnitSymbol=sec
+xIncrement=9.999999999999999e-06
+xInitialValue=0
