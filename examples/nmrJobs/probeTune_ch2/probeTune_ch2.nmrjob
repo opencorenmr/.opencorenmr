@@ -3,7 +3,7 @@ FFTCheckBox=false
 QDCheckBox=true
 digitalFilterCheckBox=true
 inFPGAAccumCheckBox=false
-inFPGAAccumSpinBox=1
+inFPGAAccumSpinBox=8
 multipleAcquisitionCheckBox=false
 multipleAcquisitionComboBox=0
 multipleAcquisitionSpinBox=1
@@ -12,9 +12,9 @@ offsetCorrectionSpinBox=0
 phaseReverseCheckBox=false
 phaseRotationCheckBox=false
 phaseRotationSpinBox=0
+replaceRealWithAbsCheckBox=false
 separateDataStorageCheckBox=false
 separateDataStorageSpinBox=2
-spectralDensityAccumCheckBox=false
 
 [Array]
 arrayCheckBox=false
@@ -27,8 +27,9 @@ nameLineEdit=probeTune_ch2
 numberOfImportedFiles=0
 obsFreqCheckBox=true
 obsFreqComboBox=0
-obsFreqLineEdit=75
+obsFreqLineEdit=40.556
 ppgFilename=probeTune_ch2.ppg
+saveAsciiCheckBox=false
 
 [Variables]
 AL=1024
@@ -37,15 +38,15 @@ NA=100
 ND=4
 PD=0.1
 a=10
-fCenter=75
+fCenter=40.556
 fSpan=20
 names=fCenter, fSpan, a, PD, NA, ND, DW, AL
 
 [xAxis]
-customAxisRadioButton=true
-defaultAxisRadioButton=false
-metricPrefixCombobox=10
-unitSymbolLineEdit=MHz
-xAxisLabelLineEdit=Frequency
-xIncrementLineEdit=fSpan/al
-xInitialValueLineEdit=fCenter-fSpan/2
+customAxisRadioButton=false
+defaultAxisRadioButton=true
+metricPrefixCombobox=13
+unitSymbolLineEdit=sec
+xAxisLabelLineEdit=
+xIncrementLineEdit=dw
+xInitialValueLineEdit=0

@@ -8,16 +8,16 @@ transform F3Freq=#-180;
 //                 +3.228E-8*pow(#,5);
 CLK=160;
 
-freq f3=300.48575; 
-amp a=100; 
+freq f3=400.24;
+amp a=100;
 
-const int AD9858_2GHZ_DISABLE=16472; 
+const int AD9858_2GHZ_DISABLE=16472;
 
-aux PD=0.2s(Pulse Delay); 
-aux NA=20(Number of Accum); 
-aux DW=5u(DWell time); 
-aux AL=100(Acquisition Length); 
-aux ND=0(Number of Dummy scans); 
+aux PD=0.2s(Pulse Delay);
+aux NA=100(Number of Accum);
+aux DW=5u(DWell time);
+aux AL=100(Acquisition Length);
+aux ND=0(Number of Dummy scans);
 
 phaselist pList=(ch3; x,-x);
 acqphase=x,-x;
@@ -31,8 +31,8 @@ start
   pulse(5000n; F3Freq(f3))
   delay(1m)
 Init
-  pulse(10u;                          F3_Unblank, RG)
+  pulse(10u;                          F3_Unblank, RG, F1TTL1)
   pulse(50n;                          F3_Unblank, RG, ST)
   pulse[al](dw*al; F3Amp(a*#/al), pList, F3_Gate, F3_Unblank, RG)
   pulse(10m)
-relax   
+relax

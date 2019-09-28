@@ -1,0 +1,110 @@
+version=2.0;
+
+uses=defaultGates.gate;
+
+transform F1Freq=#+180; // +180 MHz offset for down-conversion
+transform F2Freq=#+180; // +180 MHz offset for down-conversion
+transform F3Freq=#-180; // -180 MHz offset for up-conversion
+transform F1Amp = 0.289548
+  + 0.838712*#
+  - 0.00242412 * pow(#,2)
+  + 0.000124321 * pow(#,3)
+  - 1.60116e-06 * pow(#,4)
+  + 7.49826e-09 * pow(#,5);
+Transform F2Amp=0.831747
+	+ 0.798307 * #
+	- 0.00397388 * pow(#,2)
+	+ 8.4035e-05 * pow(#,3)
+	- 4.53503e-07 * pow(#,4)
+	+ 1.94319e-09 * pow(#,5);
+transform F3Amp = 1.43963
+  + 2.54666*#
+  - 0.0820398 * pow(#,2)
+  + 0.00176282 * pow(#,3)
+  - 1.82567e-05 * pow(#,4)
+  + 7.25197e-08 * pow(#,5);
+CLK=160;
+
+
+double aXScale=2; 
+double aYScale=3.5; 
+double aHScale=0.855; 
+
+//---------- frequency variables ----------
+freq f1=100.646388; 
+double f1Offset_kHz=0; 
+
+freq f2=40.55605; 
+double f2Offset_kHz=0; 
+
+freq f3=400.2244; 
+double f3Offset_kHz=0; 
+
+//---------- amplitude variables ----------
+amp aXCP=40; 
+amp aH90=100; 
+amp aHCP=50; 
+amp aHWidth=10; 
+amp aHDec=100; 
+//---------- phase variables ----------
+phase ph1=0; 
+phase ph2=10; 
+//----------- time variables ------------
+time pw1=2.5u(1H 90 deg. pulse width); 
+time pw_tppm=5u; 
+time ct=1m(contact time); 
+time rd=10u(Receiver delay); 
+time ad=10u(acquisition delay); 
+
+//----- loop variables -----
+
+//----- int variable -----
+
+int nRamp=11; 
+const int AD9858_2GHz_DISABLE=16472; 
+
+//-----  aux parameters  -----
+aux PD=2s; 
+aux NA=20; 
+aux nd=0; 
+aux DW=10u; 
+aux AL=4096; 
+
+//----- phase cycle  -----
+
+phaselist @pl1=(ch3; y,-y);
+acqphase=x,-x;
+
+// - Any command before "start" should finish with a semicolon (;).
+
+start   //--- Implementation begins with a "start" command. ---
+
+  pulse(50n; F1FreqRST, F2FreqRST, F3FreqRST)
+//  AD9858 (DDS chip) initialization
+  pulse(50n; F1Freq(setup;AD9858_2GHz_DISABLE),
+             F2Freq(setup;AD9858_2GHz_DISABLE),
+             F3Freq(setup;AD9858_2GHz_DISABLE))
+//  We use a 1 GHz clock, and disable 2 GHz divider,
+
+  delay(1m)
+  pulse(5000n; F1Freq(f1+0.001*f1Offset_kHz),
+               F2Freq(f2+0.001*f2Offset_kHz),
+               F3Freq(f3+0.001*f3Offset_kHz))
+  delay(1m)
+
+Init
+  pulse(10u;                      F1_Unblank, F3_Unblank, F1TTL1)
+  pulse(pw1;                      F1_Unblank, F3Amp(aHScale*aH90), @pl1, F3_Gate, F3_Unblank)
+  pulse[nRamp](ct; F1Amp(aXScale*aXCP), F1_Gate, F1_Unblank,
+               F3Amp(aHScale*(aHCP+aHWidth*(-0.5+#/10))), F3_Gate, F3_Unblank)
+  async(tppm)
+  pulse(rd)
+  pulse(ad;        RG)
+  pulse(dw*al; ST, RG)
+  sync(3)
+relax
+
+async(3;tppm)
+  pulse(pw_tppm;  F3Phase(ph1), F3Amp(aHScale*aHDec), F3_Gate, F3_Unblank)
+  pulse(pw_tppm;  F3Phase(ph2), F3Amp(aHScale*aHDec), F3_Gate, F3_Unblank)
+continue

@@ -9,7 +9,7 @@ commentTextEdit=
 
 [Variables]
 names=fCenter, fSpan, a, PD, NA, ND, DW, AL
-fCenter=300.14999999999998
+fCenter=400.2246
 fSpan=5
 a=10
 PD=0.10000000000000001

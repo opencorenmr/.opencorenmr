@@ -1,0 +1,44 @@
+version=2.0;
+uses = defaultGates.gate;
+transform F3Freq=#-180;
+
+transform F3Amp = 1.43963 
+                + 2.54666*# 
+                - 0.0820398 * pow(#,2)
+                + 0.00176282 * pow(#,3)
+                - 1.82567e-05 * pow(#,4)
+                + 7.25197e-08 * pow(#,5);
+CLK=160;
+
+freq f3=400.2244; 
+amp aHAmp=100; 
+double aHScale=0.825; 
+time pw1=2.5u; 
+time rd=5u(receiver delay); 
+time ad=5u(acquisition delay); 
+const int AD9858_2GHZ_DISABLE=16472; 
+
+aux PD=3s(Pulse Delay); 
+aux NA=8(Number of Accum); 
+aux DW=5u(DWell time); 
+aux AL=2048(Acquisition Length); 
+aux ND=0(Number of Dummy scans); 
+
+phaselist pList=(ch3; x,y,-x,-y);
+acqphase=x,y,-x,-y;
+
+// - Any command before "start" should finish with a semicolon (;).
+
+start
+  pulse(50n; F3FreqRST)
+  pulse(50n; F3Freq(setup;AD9858_2GHz_DISABLE))
+  delay(1m)
+  pulse(5000n; F3Freq(f3))
+  delay(1m)
+Init
+  pulse(10u;                          F3_Unblank, F1TTL1)
+  pulse(pw1; F3Amp(aHScale*aHAmp), pList, F3_Gate, F3_Unblank)
+  pulse(rd)
+  pulse(ad; RG)
+  pulse(dw*al;  ST, RG)
+relax   
