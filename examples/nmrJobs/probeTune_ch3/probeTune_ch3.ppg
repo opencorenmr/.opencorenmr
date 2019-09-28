@@ -9,11 +9,11 @@ transform F3Freq=#-180;
 CLK=160;
 
 {---------- frequency variable ----------
-freq fCenter=300.15; 
+freq fCenter=400.2244; 
 freq fSpan=5; 
 
 {---------- amplitude variable ----------
-amp a=10; 
+amp a=5; 
 
 {---------- phase variable ----------
 
@@ -28,7 +28,7 @@ const int AD9858_2GHz_DISABLE=16472;
 {-----  aux parameters  -----
 aux PD=0.1s(Pulse delay); 
 aux NA=100(Total scans); 
-aux ND=4(Dummy scans); 
+aux ND=0(Dummy scans); 
 aux DW=10u(Dwell time); 
 aux AL=1024(Acq. length); 
 

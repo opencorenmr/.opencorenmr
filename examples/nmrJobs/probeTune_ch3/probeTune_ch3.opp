@@ -1,6 +1,6 @@
 point=1024
 dw=10
-sf1=100.646388
+sf1=400.2244
 #
 
 [Log]
@@ -12,5 +12,5 @@ metricPrefix=micro
 plotMetricPrefix=
 xAxisLabel=Frequency
 xAxisUnitSymbol=MHz
-xIncrement=0.00244140625
-xInitialValue=99.396388
+xIncrement=0.0048828125
+xInitialValue=397.7244
