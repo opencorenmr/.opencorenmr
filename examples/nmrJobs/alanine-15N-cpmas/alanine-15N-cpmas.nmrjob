@@ -2,8 +2,8 @@
 FFTCheckBox=false
 QDCheckBox=true
 digitalFilterCheckBox=true
-inFPGAAccumCheckBox=true
-inFPGAAccumSpinBox=2
+inFPGAAccumCheckBox=false
+inFPGAAccumSpinBox=8
 multipleAcquisitionCheckBox=false
 multipleAcquisitionComboBox=0
 multipleAcquisitionSpinBox=1
@@ -23,24 +23,43 @@ dimensions=0
 
 [File]
 commentTextEdit=
-nameLineEdit=probeTune_ch2
+nameLineEdit=alanine-15N-cpmas
 numberOfImportedFiles=0
 obsFreqCheckBox=true
 obsFreqComboBox=0
-obsFreqLineEdit=40.556
-ppgFilename=probeTune_ch2.ppg
+obsFreqLineEdit=100.646388
+ppgFilename=1pulse-decouple_ch2.ppg
 saveAsciiCheckBox=false
 
 [Variables]
-AL=1024
+AL=4096
 DW=10
-NA=100
+NA=20
 ND=0
-PD=0.1
-a=5
-fCenter=40.556
-fSpan=5
-names=fCenter, fSpan, a, PD, NA, ND, DW, AL
+PD=5
+aH90=100
+aHCP=30
+aHDec=80
+aHScale=0.855
+aHWidth=10
+aXScale=2
+aYCP=20
+aYScale=4.1
+ad=20
+ct=0.5
+f1=100.646388
+f1Offset_kHz=0
+f2=40.55605
+f2Offset_kHz=0
+f3=400.2244
+f3Offset_kHz=0
+nRamp=11
+names=aXScale, aYScale, aHScale, f1, f1Offset_kHz, f2, f2Offset_kHz, f3, f3Offset_kHz, aYCP, aH90, aHCP, aHWidth, aHDec, nRamp, ph1, ph2, pw90H, ct, pw_tppm, rd, ad, PD, NA, DW, AL, ND
+ph1=0
+ph2=10
+pw90H=2.5
+pw_tppm=6.25
+rd=20
 
 [xAxis]
 customAxisRadioButton=false
