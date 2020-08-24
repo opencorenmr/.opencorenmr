@@ -22,10 +22,10 @@ CLK=160;  // PPG Clock frequency
 double aXScale=2; 
 double aHScale=0.825; 
 
-freq f1=100.277915; 
+freq f1=100.2773; 
 double f1Offset_kHz=0; 
 
-freq f3=400.2244; 
+freq f3=400.222; 
 double f3Offset_kHz=0; 
 
 amp aX=50; 

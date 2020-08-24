@@ -10,9 +10,9 @@ transform F3Amp = 1.43963
                 + 7.25197e-08 * pow(#,5);
 CLK=160;
 
-freq f3=400.2244; 
+freq f3=400.222; 
 amp aHAmp=100; 
-double aHScale=0.825; 
+double aHScale=0.855; 
 time pw1=2.5u; 
 time rd=5u(receiver delay); 
 time ad=5u(acquisition delay); 

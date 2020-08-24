@@ -1,14 +1,17 @@
 point=8192
 dw=10
-sf1=100.646388
+sf1=100.645765
 #
-400.2244 MHz --- adamantance --- 1.8 ppm from TMS
 
-27 Sep 2019 
+24 Aug 2020 
 400 5mm CPMAS probe
+
 
 aXScale = 2
 aHScale = 0.825
 
-100 ppm --- 100.646388 MHz 
+400.222 MHz --- adamantance --- 1.8 ppm from TMS
+
+adamantance methylene 100.63951544
+100 ppm --- 100.645770 MHz 
 

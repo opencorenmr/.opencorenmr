@@ -30,13 +30,13 @@ double aXScale=2;
 double aHScale=0.825; 
 
 //---------- frequency variables ----------
-freq f1=100.646388; 
+freq f1=100.645765; 
 double f1Offset_kHz=0; 
 
 freq f2=40.55605; 
 double f2Offset_kHz=0; 
 
-freq f3=400.2244; 
+freq f3=400.222; 
 double f3Offset_kHz=0; 
 
 //---------- amplitude variables ----------

@@ -22,12 +22,12 @@ arrayVariables=@Invalid()
 dimensions=0
 
 [File]
-commentTextEdit=400.2244 MHz --- adamantance --- 1.8 ppm from TMS
+commentTextEdit=400.222 MHz --- adamantance --- 1.8 ppm from TMS
 nameLineEdit=adamantane-1H-1pulse
 numberOfImportedFiles=0
 obsFreqCheckBox=true
 obsFreqComboBox=0
-obsFreqLineEdit=400.2244
+obsFreqLineEdit=400.222
 ppgFilename=1pulse_ch3.ppg
 saveAsciiCheckBox=false
 
@@ -40,7 +40,7 @@ PD=3
 aHAmp=100
 aHScale=0.855
 ad=5
-f3=400.2244
+f3=400.222
 names=f3, aHAmp, aHScale, pw1, rd, ad, PD, NA, DW, AL, ND
 pw1=2.5
 rd=5
