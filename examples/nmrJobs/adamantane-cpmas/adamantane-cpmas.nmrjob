@@ -32,7 +32,7 @@ ppgFilename=rampCP_tppm.ppg
 saveAsciiCheckBox=false
 
 [Variables]
-AL=8192
+AL=16384
 DW=10
 NA=20
 PD=3

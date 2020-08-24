@@ -67,7 +67,7 @@ aux PD=3s;
 aux NA=20; 
 aux nd=0; 
 aux DW=10u; 
-aux AL=8192; 
+aux AL=16384; 
 
 //----- phase cycle  -----
 
