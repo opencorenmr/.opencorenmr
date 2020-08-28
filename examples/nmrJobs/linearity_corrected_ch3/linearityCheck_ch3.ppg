@@ -3,16 +3,16 @@ uses = defaultGates.gate;
 transform F3Freq=#-180;
 
 
-transform F3Amp = 0.758452
-                + 2.27997 * # 
-                - 0.0680751 * pow(#,2)
-                + 0.00139168 * pow(#,3)
-                - 1.3851e-05 * pow(#,4)
-                + 5.44345e-08 * pow(#,5);
+transform F3Amp = 0
+                + 1.0611 * # 
+                - 0.0232933 * pow(#,2)
+                + 0.000652181 * pow(#,3)
+                - 8.68075e-06 * pow(#,4)
+                + 4.40619e-08 * pow(#,5);
 
 CLK=160;
 
-freq f3=299.52; 
+freq f3=300.44; 
 amp a=100; 
 
 const int AD9858_2GHZ_DISABLE=16472; 
