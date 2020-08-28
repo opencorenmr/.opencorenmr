@@ -4,12 +4,12 @@ version=2.0;
 uses = defaultGates.gate;
 // defaultGates.gate is located in the ~/.opencorenmr/gates/ directory.
 
-transform F1Amp = 0.367938
-                + 0.804824 * # 
-                + 0.00444317 * pow(#,2)
-                - 7.79459e-05 * pow(#,3)
-                + 7.84528e-07 * pow(#,4)
-                - 2.67529e-09 * pow(#,5);
+transform F1Amp = 0
+                + 1.05801 * # 
+                - 0.00354787 * pow(#,2)
+                + 6.75407e-05 * pow(#,3)
+                - 8.96059e-07 * pow(#,4)
+                + 5.0645e-09 * pow(#,5);
 
 transform F1Freq=#+180;
 // DDS(II) signal is to be down-converted with an intermediate frequency of 180 MHz.
@@ -17,7 +17,7 @@ transform F1Freq=#+180;
 
 CLK=160;  // PPG Clock frequency 
 
-freq f1=100.56; 
+freq f1=150.9; 
 
 amp a=100; 
 

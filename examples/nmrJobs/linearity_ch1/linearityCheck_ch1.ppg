@@ -10,7 +10,7 @@ transform F1Freq=#+180;
 
 CLK=160;  // PPG Clock frequency
 
-freq f1=100.56; 
+freq f1=150.9; 
 
 amp a=100; 
 
