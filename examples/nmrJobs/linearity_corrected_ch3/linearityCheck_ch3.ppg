@@ -3,25 +3,25 @@ uses = defaultGates.gate;
 transform F3Freq=#-180;
 
 
-transform F3Amp = 1.43963
-                + 2.54666 * # 
-                - 0.0820398 * pow(#,2)
-                + 0.00176282 * pow(#,3)
-                - 1.82567e-05 * pow(#,4)
-                + 7.25197e-08 * pow(#,5);
+transform F3Amp = 0.001
+                + 1.64591 * # 
+                - 0.029311 * pow(#,2)
+                + 0.00056826 * pow(#,3)
+                - 5.64764e-06 * pow(#,4)
+                + 2.24275e-08 * pow(#,5);
 
 CLK=160;
 
-freq f3=400.24;
-amp a=100;
+freq f3=600.136; 
+amp a=100; 
 
-const int AD9858_2GHZ_DISABLE=16472;
+const int AD9858_2GHZ_DISABLE=16472; 
 
-aux PD=0.2s(Pulse Delay);
-aux NA=100(Number of Accum);
-aux DW=5u(DWell time);
-aux AL=100(Acquisition Length);
-aux ND=0(Number of Dummy scans);
+aux PD=0.2s(Pulse Delay); 
+aux NA=100(Number of Accum); 
+aux DW=5u(DWell time); 
+aux AL=100(Acquisition Length); 
+aux ND=0(Number of Dummy scans); 
 
 phaselist pList=(ch3; x,-x);
 acqphase=x,-x;
