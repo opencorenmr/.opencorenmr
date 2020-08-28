@@ -27,7 +27,7 @@ nameLineEdit=linearity_ch2
 numberOfImportedFiles=0
 obsFreqCheckBox=true
 obsFreqComboBox=0
-obsFreqLineEdit=40.2
+obsFreqLineEdit=30.3
 ppgFilename=linearityCheck_ch2.ppg
 saveAsciiCheckBox=false
 
@@ -38,7 +38,7 @@ NA=20
 ND=0
 PD=0.2
 a=100
-f2=40.2
+f2=30.3
 names=f2, a, PD, NA, DW, AL, ND
 
 [xAxis]

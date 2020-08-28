@@ -27,7 +27,7 @@ nameLineEdit=linearity_corrected_ch1
 numberOfImportedFiles=0
 obsFreqCheckBox=true
 obsFreqComboBox=0
-obsFreqLineEdit=100.56
+obsFreqLineEdit=75.3
 ppgFilename=linearityCheck_ch1.ppg
 saveAsciiCheckBox=false
 
@@ -38,7 +38,7 @@ NA=20
 ND=0
 PD=0.2
 a=100
-f1=100.56
+f1=75.3
 names=f1, a, PD, NA, DW, AL, ND
 
 [xAxis]

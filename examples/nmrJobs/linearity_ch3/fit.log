@@ -42,3 +42,47 @@ a2              0.694 -0.966  1.000
 a3             -0.615  0.912 -0.985  1.000 
 a4              0.559 -0.860  0.957 -0.992  1.000 
 a5             -0.516  0.815 -0.926  0.975 -0.995  1.000 
+
+
+*******************************************************************************
+Fri Aug 28 17:16:14 2020
+
+
+FIT:    data read from 'uncorrected.dat' using 4:0
+        format = x:z
+        #datapoints = 100
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a+b*x+c*x**2+d*x**3+e*x**4+f*x**5
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b             c             d             e             f            
+   0 3.8457022246e+03   0.00e+00  4.27e+02    1.001313e-03   2.529327e+00  -7.575747e-02   1.567765e-03  -1.503544e-05   5.404153e-08
+   9 1.0388089329e+01  -1.36e-06  4.27e-07    7.584517e-01   2.279973e+00  -6.807509e-02   1.391682e-03  -1.385101e-05   5.443448e-08
+
+After 9 iterations the fit converged.
+final sum of squares of residuals : 10.3881
+rel. change during last iteration : -1.36252e-11
+
+degrees of freedom    (FIT_NDF)                        : 94
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.332433
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.110512
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.758452         +/- 0.1341       (17.68%)
+b               = 2.27997          +/- 0.03271      (1.435%)
+c               = -0.0680751       +/- 0.002185     (3.209%)
+d               = 0.00139168       +/- 5.711e-05    (4.104%)
+e               = -1.3851e-05      +/- 6.362e-07    (4.593%)
+f               = 5.44345e-08      +/- 2.532e-09    (4.651%)
+
+correlation matrix of the fit parameters:
+                a      b      c      d      e      f      
+a               1.000 
+b              -0.819  1.000 
+c               0.689 -0.963  1.000 
+d              -0.606  0.907 -0.985  1.000 
+e               0.547 -0.854  0.956 -0.992  1.000 
+f              -0.503  0.807 -0.924  0.975 -0.995  1.000 
