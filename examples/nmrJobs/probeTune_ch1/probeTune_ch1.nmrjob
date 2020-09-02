@@ -27,7 +27,7 @@ nameLineEdit=probeTune_ch1
 numberOfImportedFiles=0
 obsFreqCheckBox=true
 obsFreqComboBox=0
-obsFreqLineEdit=100.646388
+obsFreqLineEdit=100.645765
 ppgFilename=probeTune_ch1.ppg
 saveAsciiCheckBox=false
 
@@ -38,7 +38,7 @@ NA=100
 ND=4
 PD=0.1
 a=5
-fCenter=100.646388
+fCenter=100.645765
 fSpan=2.5
 names=fCenter, fSpan, a, PD, NA, ND, DW, AL
 
