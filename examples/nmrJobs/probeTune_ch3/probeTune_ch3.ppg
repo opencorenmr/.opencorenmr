@@ -9,7 +9,7 @@ transform F3Freq=#-180;
 CLK=160;
 
 {---------- frequency variable ----------
-freq fCenter=299.52; 
+freq fCenter=300.4856; 
 freq fSpan=5; 
 
 {---------- amplitude variable ----------
