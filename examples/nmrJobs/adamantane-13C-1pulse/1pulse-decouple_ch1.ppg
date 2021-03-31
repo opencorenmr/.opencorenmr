@@ -17,25 +17,25 @@ Transform F2Amp=0.831747
 	+ 8.4035e-05 * pow(#,3)
 	- 4.53503e-07 * pow(#,4)
 	+ 1.94319e-09 * pow(#,5);
-transform F3Amp = 1.43963
-	+ 2.54666 * #
-	- 0.0820398 * pow(#,2)
-	+ 0.00176282 * pow(#,3)
-	- 1.82567e-05 * pow(#,4)
-	+ 7.25197e-08 * pow(#,5);
+transform F3Amp = 1.10272 
+                + 2.53518  * # 
+                - 0.104284 * pow(#,2)
+                + 0.00260483 * pow(#,3)
+                - 3.00263e-05  * pow(#,4)
+                + 1.28261e-07 * pow(#,5);
 
 CLK=160;  // PPG Clock frequency
 
-double aXScale=2; 
-double aHScale=0.825; 
+double aXScale=1.85; 
+double aHScale=1; 
 
-freq f1=100.646388; 
-double f1Offset_kHz=0; 
+freq f1=100.645512; 
+double f1Offset_kHz=-6.255; 
 
 freq f2=40.55605; 
 double f2Offset_kHz=0; 
 
-freq f3=400.2244; 
+freq f3=400.2209; 
 double f3Offset_kHz=0; 
 
 amp aX=50; 

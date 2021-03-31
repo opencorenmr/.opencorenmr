@@ -2,12 +2,12 @@ version=2.0;
 uses = defaultGates.gate;
 transform F3Freq=#-180;
 
-transform F3Amp = 1.43963 
-                + 2.54666*# 
-                - 0.0820398 * pow(#,2)
-                + 0.00176282 * pow(#,3)
-                - 1.82567e-05 * pow(#,4)
-                + 7.25197e-08 * pow(#,5);
+transform F3Amp = 1.10272 
+                + 2.53518  * # 
+                - 0.104284 * pow(#,2)
+                + 0.00260483 * pow(#,3)
+                - 3.00263e-05  * pow(#,4)
+                + 1.28261e-07 * pow(#,5);
 CLK=160;
 
 freq f3=400.222; 

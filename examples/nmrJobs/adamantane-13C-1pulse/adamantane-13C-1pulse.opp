@@ -1,14 +1,14 @@
 point=8192
 dw=10
-sf1=100.646388
+sf1=100.645512
 #
-27 Sep 2019 
+24 Dec 2020
 400 5mm CPMAS probe
 
-aXScale = 2
-aHScale = 0.825
+aXScale = 1.85
+aHScale = 1
 
-100 ppm --- 100.646388 MHz 
+100 ppm --- 100.645512 MHz 
 [Log]
 actualNA=20
 

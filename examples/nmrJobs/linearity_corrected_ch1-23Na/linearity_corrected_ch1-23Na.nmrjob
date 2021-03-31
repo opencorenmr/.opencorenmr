@@ -19,15 +19,17 @@ separateDataStorageSpinBox=2
 [Array]
 arrayCheckBox=false
 arrayVariables=@Invalid()
+autoRepeatCheckBox=false
+autoRepeatSpinBox=2
 dimensions=0
 
 [File]
 commentTextEdit=
-nameLineEdit=linearity_corrected_ch1
+nameLineEdit=linearity_corrected_ch1-23Na
 numberOfImportedFiles=0
 obsFreqCheckBox=true
 obsFreqComboBox=0
-obsFreqLineEdit=100.56
+obsFreqLineEdit=105.86
 ppgFilename=linearityCheck_ch1.ppg
 saveAsciiCheckBox=false
 
@@ -36,9 +38,9 @@ AL=100
 DW=5
 NA=20
 ND=0
-PD=1
+PD=0.2
 a=100
-f1=100.56
+f1=105.86
 names=f1, a, PD, NA, DW, AL, ND
 
 [xAxis]

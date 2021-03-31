@@ -22,12 +22,12 @@ arrayVariables=@Invalid()
 dimensions=0
 
 [File]
-commentTextEdit="\n24 Aug 2020 \n400 5mm CPMAS probe\n\n\naXScale = 2\naHScale = 0.825\n\n400.222 MHz --- adamantance --- 1.8 ppm from TMS\n\nadamantance methylene 100.63951544\n100 ppm --- 100.645770 MHz \n\n"
+commentTextEdit="24 Dec 2020 \n400 5mm CPMAS probe\n\n\naXScale = 1.85\naHScale = 1\n\n400.2209 MHz --- adamantance --- 1.8 ppm from TMS\n100 ppm --- 100.645512 MHz \n\n"
 nameLineEdit=adamantane-cpmas
 numberOfImportedFiles=0
 obsFreqCheckBox=true
 obsFreqComboBox=0
-obsFreqLineEdit=100.645765
+obsFreqLineEdit=100.645512
 ppgFilename=rampCP_tppm.ppg
 saveAsciiCheckBox=false
 
@@ -39,17 +39,17 @@ PD=3
 aH90=100
 aHCP=42
 aHDec=30
-aHScale=0.825
+aHScale=1
 aHWidth=0
 aXCP=40
-aXScale=2
+aXScale=1.85
 ad=10
 ct=5
-f1=100.645765
+f1=100.645512
 f1Offset_kHz=0
 f2=40.55605
 f2Offset_kHz=0
-f3=400.222
+f3=400.2209
 f3Offset_kHz=0
 nRamp=11
 names=aXScale, aHScale, f1, f1Offset_kHz, f2, f2Offset_kHz, f3, f3Offset_kHz, aXCP, aH90, aHCP, aHWidth, aHDec, ph1, ph2, pw1, pw_tppm, ct, rd, ad, nRamp, PD, NA, nd, DW, AL

@@ -10,8 +10,8 @@ multipleAcquisitionSpinBox=1
 offsetCorrectionCheckBox=false
 offsetCorrectionSpinBox=0
 phaseReverseCheckBox=false
-phaseRotationCheckBox=false
-phaseRotationSpinBox=0
+phaseRotationCheckBox=true
+phaseRotationSpinBox=-35
 replaceRealWithAbsCheckBox=false
 separateDataStorageCheckBox=false
 separateDataStorageSpinBox=2
@@ -22,12 +22,12 @@ arrayVariables=@Invalid()
 dimensions=0
 
 [File]
-commentTextEdit="27 Sep 2019 \n400 5mm CPMAS probe\n\naXScale = 2\naHScale = 0.825\n\n100 ppm --- 100.646388 MHz "
+commentTextEdit="24 Dec 2020\n400 5mm CPMAS probe\n\naXScale = 1.85\naHScale = 1\n\n100 ppm --- 100.645512 MHz "
 nameLineEdit=adamantane-13C-1pulse
 numberOfImportedFiles=0
 obsFreqCheckBox=true
 obsFreqComboBox=0
-obsFreqLineEdit=100.646388
+obsFreqLineEdit=100.645512
 ppgFilename=1pulse-decouple_ch1.ppg
 saveAsciiCheckBox=false
 
@@ -38,15 +38,15 @@ NA=20
 ND=0
 PD=5
 aHDec=30
-aHScale=0.825
+aHScale=1
 aX=50
-aXScale=2
+aXScale=1.85
 ad=20
-f1=100.646388
-f1Offset_kHz=0
+f1=100.645512
+f1Offset_kHz=-6.255
 f2=40.55605
 f2Offset_kHz=0
-f3=400.2244
+f3=400.2209
 f3Offset_kHz=0
 names=aXScale, aHScale, f1, f1Offset_kHz, f2, f2Offset_kHz, f3, f3Offset_kHz, aX, aHDec, ph1, ph2, pw1, pw_tppm, rd, ad, PD, NA, DW, AL, ND
 ph1=0

@@ -19,6 +19,8 @@ separateDataStorageSpinBox=2
 [Array]
 arrayCheckBox=false
 arrayVariables=@Invalid()
+autoRepeatCheckBox=false
+autoRepeatSpinBox=2
 dimensions=0
 
 [File]

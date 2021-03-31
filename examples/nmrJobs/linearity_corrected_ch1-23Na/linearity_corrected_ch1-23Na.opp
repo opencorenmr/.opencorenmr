@@ -1,10 +1,10 @@
-point=2048
+point=100
 dw=5
-sf1=400.222
+sf1=105.86
 #
-400.222 MHz --- adamantance --- 1.8 ppm from TMS
+
 [Log]
-actualNA=8
+actualNA=20
 
 [XAxis]
 isCustom=false

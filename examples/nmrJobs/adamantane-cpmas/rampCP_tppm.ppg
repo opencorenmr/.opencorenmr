@@ -5,38 +5,39 @@ uses=defaultGates.gate;
 transform F1Freq=#+180; // +180 MHz offset for down-conversion
 transform F2Freq=#+180; // +180 MHz offset for down-conversion
 transform F3Freq=#-180; // -180 MHz offset for up-conversion
-transform F1Amp = 0.289548 
-                + 0.838712*# 
-                - 0.00242412 * pow(#,2)
-                + 0.000124321 * pow(#,3)
-                - 1.60116e-06 * pow(#,4)
-                + 7.49826e-09 * pow(#,5);
+transform F1Amp = 0.367938
+	+ 0.804824 * #
+	+ 0.00444317 * pow(#,2)
+	- 7.79459e-05 * pow(#,3)
+	+ 7.84528e-07 * pow(#,4)
+	- 2.67529e-09 * pow(#,5);
 Transform F2Amp=0.831747
 	+ 0.798307 * #
 	- 0.00397388 * pow(#,2)
 	+ 8.4035e-05 * pow(#,3)
 	- 4.53503e-07 * pow(#,4)
 	+ 1.94319e-09 * pow(#,5);
-transform F3Amp = 1.43963 
-                + 2.54666*# 
-                - 0.0820398 * pow(#,2)
-                + 0.00176282 * pow(#,3)
-                - 1.82567e-05 * pow(#,4)
-                + 7.25197e-08 * pow(#,5);
+transform F3Amp = 1.10272 
+                + 2.53518  * # 
+                - 0.104284 * pow(#,2)
+                + 0.00260483 * pow(#,3)
+                - 3.00263e-05  * pow(#,4)
+                + 1.28261e-07 * pow(#,5);
+
 CLK=160;
 
 
-double aXScale=2; 
-double aHScale=0.825; 
+double aXScale=1.85; 
+double aHScale=1; 
 
 //---------- frequency variables ----------
-freq f1=100.645765; 
+freq f1=100.645512; 
 double f1Offset_kHz=0; 
 
 freq f2=40.55605; 
 double f2Offset_kHz=0; 
 
-freq f3=400.222; 
+freq f3=400.2209; 
 double f3Offset_kHz=0; 
 
 //---------- amplitude variables ----------
